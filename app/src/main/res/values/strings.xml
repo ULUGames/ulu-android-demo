@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ULUAndroidSDKDemo</string>
+    <!--   1 ULUSDK沙盒环境，0  ULUSDK生产环境，游戏可根据此参数判断当前SDK环境  如果是新接入的话先设置成1，最后上线前设置回0-->
+    <string name="ulu_env">1</string>
+    <!--三星支付环境 0生产1沙盒-->
+    <string name="samsung_operation_mode">0</string>
+    <string name="facebook_app_id">【请将括号带文字替换成参数表中fb的app id】</string>
+    <string name="af_dev_key">【请将括号带文字替换成参数表中af的dev key】</string>
+    <!--谷歌登录用client_id，若参数表中没有对应id则使用google-services.json中type为3的id-->
+    <string name="google_login_web_client_id">【请将括号带文字替换成参数表中谷歌的client id】</string>
+    <string name="google_pay_key">【请将括号带文字替换成参数表中谷歌支付公钥】</string>
+
+    <string name="onestore_pay_key">【请将括号带文字替换成参数表中onestore的pay key】</string>
+    <!--推特参数-->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">【请将括号带文字替换成参数表中的twitter consumer key】</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">【请将括号带文字替换成参数表中的twitter consumer secret】</string>
+    <!--kakao参数-->
+    <string name="ulu_kakao_shareurl">【请将括号带文字替换成参数表中的kakao share url】</string>
+    <!--分享显示设置，0为隐藏，1为显示-->
+    <string name="ulu_share_kakao_on">0</string>
+    <string name="ulu_share_fb_on">1</string>
+    <string name="ulu_share_twitter_on">1</string>
+    <string name="ulu_share_ins_on">1</string>
+
+    <!--sdk谷歌推荐位设置，0为一般设置，如果要求申请谷歌推荐位则需要设置为1（可选）-->
+    <string name="ulu_is_google_recommend">0</string>
+</resources>

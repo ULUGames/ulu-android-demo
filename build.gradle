@@ -1,0 +1,54 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        kotlin_version = '1.5.10'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+    }
+    dependencies {
+        //注意安卓插件版本需要为3.3.3/3.4.3/3.5.4/3.6.4/4.0.1或更高版本
+        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath 'com.google.gms:google-services:4.3.8'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+
+        google()
+        mavenCentral()
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' } //只是任意的jcenter镜像或替代，非sdk必要项
+        maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'} //同上
+
+        maven { url 'https://repo.ulugame.com/repository/maven-public/'} //SDK需要
+
+//        maven{ url 'https://devrepo.kakao.com/nexus/content/groups/public/' } //需要kakao分享则需要此项
+
+        maven{ url'https://anythink.jfrog.io/artifactory/android_sdk'} //广告sdk需要
+        //广告sdk需要
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //广告sdk需要
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //广告sdk需要
+        maven {
+            url "https://artifact.bytedance.com/repository/pangle"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

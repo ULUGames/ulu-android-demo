@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ulugames.uluandroidsdkdemo">
+
+    <application
+        android:allowBackup="true"
+        android:name=".DemoApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <!--适配Android 8 开始不允许使用未加密请求-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--配置渠道参数，谷歌是2，onestore是3，三星是4-->
+        <meta-data
+            android:name="channel_id"
+            android:value="2" />
+        <!--fb配置-->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <!--如果有多渠道包同时安装需求，可以在authorities前添加渠道名，例如android:authorities="samsung.com.facebook.app.FacebookContentProvider123456xxx"-->
+        <provider android:authorities="com.facebook.app.FacebookContentProvider【请将括号带文字替换成参数表中fb的app id】"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <!--kakao配置-->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="【请将括号带文字替换成参数表中kakao的app key】"/>
+        <!--推送相关配置（可选）-->
+        <!--如果有推送的小图标显示要求，请自行替换resource添加-->
+<!--        <meta-data-->
+<!--            android:name="com.google.firebase.messaging.default_notification_icon"-->
+<!--            android:resource="@mipmap/ic_firebase_notification_default"/>-->
+        <!--如果有推送的背景色要求，请自行替换resource添加-->
+<!--        <meta-data-->
+<!--            android:name="com.google.firebase.messaging.default_notification_color"-->
+<!--            android:resource="@android:color/holo_red_dark"/>-->
+    </application>
+
+</manifest>
