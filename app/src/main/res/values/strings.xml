@@ -5,6 +5,7 @@
     <!--三星支付环境 0生产1沙盒-->
     <string name="samsung_operation_mode">0</string>
     <string name="facebook_app_id">【请将括号带文字替换成参数表中fb的app id】</string>
+    <string name="facebook_client_token">【请将括号带文字替换成参数表中fb的client token】</string>
     <string name="af_dev_key">【请将括号带文字替换成参数表中af的dev key】</string>
     <!--谷歌登录用client_id，若参数表中没有对应id则使用google-services.json中type为3的id-->
     <string name="google_login_web_client_id">【请将括号带文字替换成参数表中谷歌的client id】</string>

@@ -28,7 +28,7 @@ allprojects {
         maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'} //同上
 
         maven { url 'https://repo.ulugame.com/repository/maven-public/'} //SDK需要
-
+        maven { url 'https://repo.onestore.co.kr/repository/onestore-sdk-public' }//同上
 //        maven{ url 'https://devrepo.kakao.com/nexus/content/groups/public/' } //需要kakao分享则需要此项
 
         maven{ url'https://anythink.jfrog.io/artifactory/android_sdk'} //广告sdk需要

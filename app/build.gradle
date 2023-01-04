@@ -36,7 +36,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    implementation 'com.ulusdk:ulusdk:3.3.1-SNAPSHOT'//sdk的引用
+    implementation 'com.ulusdk:ulusdk:3.3.5-SNAPSHOT'//sdk的引用
 
 //        implementation 'com.kakao.sdk:usermgmt:1.30.5'//使用kakao分享再添加
 //        implementation 'com.kakao.sdk:kakaotalk:1.30.5'

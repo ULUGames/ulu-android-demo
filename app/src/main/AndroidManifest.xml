@@ -29,7 +29,8 @@
             android:value="2" />
         <!--fb配置-->
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-        <!--如果有多渠道包同时安装需求，可以在authorities前添加渠道名，例如android:authorities="samsung.com.facebook.app.FacebookContentProvider123456xxx"-->
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <!--由于有多渠道包同时安装需求，请在authorities前添加除谷歌以外的渠道名，例如android:authorities="samsung.com.facebook.app.FacebookContentProvider123456xxx"-->
         <provider android:authorities="com.facebook.app.FacebookContentProvider【请将括号带文字替换成参数表中fb的app id】"
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true"/>
