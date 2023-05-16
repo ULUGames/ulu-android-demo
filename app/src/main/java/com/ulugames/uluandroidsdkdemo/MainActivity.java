@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onInitSuccess() {
                 //初始化成功回调，执行接下来的操作，如登录等
-
                 login();//此处仅做参考，请按照实际需求处理回调
             }
 

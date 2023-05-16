@@ -23,7 +23,7 @@
         </activity>
 
 
-        <!--配置渠道参数，谷歌是2，onestore是3，三星是4-->
+        <!--配置渠道参数，谷歌是2，onestore是3，三星是4， 第三方支付为14-->
         <meta-data
             android:name="channel_id"
             android:value="2" />
@@ -38,6 +38,19 @@
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="【请将括号带文字替换成参数表中kakao的app key】"/>
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao${YOUR_NATIVE_APP_KEY}://oauth" -->
+                <data android:scheme="kakao【请将括号带文字替换成参数表中kakao的app key】" android:host="oauth" />
+
+            </intent-filter>
+        </activity>
         <!--推送相关配置（可选）-->
         <!--如果有推送的小图标显示要求，请自行替换resource添加-->
 <!--        <meta-data-->

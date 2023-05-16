@@ -11,8 +11,8 @@ buildscript {
     }
     dependencies {
         //注意安卓插件版本需要为3.3.3/3.4.3/3.5.4/3.6.4/4.0.1或更高版本
-        classpath 'com.android.tools.build:gradle:3.6.4'
-        classpath 'com.google.gms:google-services:4.3.8'
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.google.gms:google-services:4.3.15'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -29,7 +29,7 @@ allprojects {
 
         maven { url 'https://repo.ulugame.com/repository/maven-public/'} //SDK需要
         maven { url 'https://repo.onestore.co.kr/repository/onestore-sdk-public' }//同上
-//        maven{ url 'https://devrepo.kakao.com/nexus/content/groups/public/' } //需要kakao分享则需要此项
+        maven{ url 'https://devrepo.kakao.com/nexus/content/groups/public/' }//同上
 
         maven{ url'https://anythink.jfrog.io/artifactory/android_sdk'} //广告sdk需要
         //广告sdk需要

@@ -16,9 +16,11 @@
     <string name="com.twitter.sdk.android.CONSUMER_KEY">【请将括号带文字替换成参数表中的twitter consumer key】</string>
     <string name="com.twitter.sdk.android.CONSUMER_SECRET">【请将括号带文字替换成参数表中的twitter consumer secret】</string>
     <!--kakao参数-->
-    <string name="ulu_kakao_shareurl">【请将括号带文字替换成参数表中的kakao share url】</string>
+    <string name="kakao_app_key" translatable="false">【请将括号带文字替换成参数表中kakao的app key】</string>
+    <!--naver参数-->
+    <string name="naver_login_client_id" translatable="false">【请将括号带文字替换成参数表中naver的client id，可能与naver game的参数相同】</string>
+    <string name="naver_login_client_secret" translatable="false">【请将括号带文字替换成参数表中naver的client secret，可能与naver game的参数相同】</string>
     <!--分享显示设置，0为隐藏，1为显示-->
-    <string name="ulu_share_kakao_on">0</string>
     <string name="ulu_share_fb_on">1</string>
     <string name="ulu_share_twitter_on">1</string>
     <string name="ulu_share_ins_on">1</string>
